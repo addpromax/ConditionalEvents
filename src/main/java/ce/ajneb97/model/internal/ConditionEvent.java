@@ -212,7 +212,6 @@ public class ConditionEvent {
                 if(meta.hasCustomModelData()) {
                     customModelData = meta.getCustomModelData();
                 }
-                }
             }
         }
 
