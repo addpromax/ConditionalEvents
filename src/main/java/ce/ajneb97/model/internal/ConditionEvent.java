@@ -209,11 +209,9 @@ public class ConditionEvent {
                         }
                     }
                 }
-                if(OtherUtils.isNew() && meta.hasCustomModelData()){
-                    ServerVersion serverVersion = ConditionalEvents.serverVersion;
-                    if(!serverVersion.serverVersionGreaterEqualThan(serverVersion,ServerVersion.v1_21_R3)){
-                        customModelData = meta.getCustomModelData();
-                    }
+                if(meta.hasCustomModelData()) {
+                    customModelData = meta.getCustomModelData();
+                }
                 }
             }
         }
